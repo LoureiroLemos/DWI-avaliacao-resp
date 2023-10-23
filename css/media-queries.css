@@ -1,0 +1,87 @@
+@media screen and (max-width: 480px) {
+  * {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    width: 100vw;
+  }
+
+  main {
+    padding: 0px;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+
+    border: solid blue;
+  }
+
+  main .col1 {
+    width: 100%;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  main .col2 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .col2 figure .image img {
+    width: 80%;
+  }
+
+  main .col2 .image-price {
+    width: 30%;
+  }
+
+  .sec-1 {
+    height: fit-content;
+    width: 100vw;
+  }
+
+  .sec-1 .cards {
+    flex-direction: column;
+  }
+
+  form .container-form {
+    flex-direction: column;
+  }
+
+  footer {
+    border: solid green;
+    height: fit-content;
+    width: 100vw;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  footer .col1 {
+    border: solid red;
+    width: 100%;
+  }
+
+  footer .col2 {
+    border: solid red;
+    width: 100%;
+  }
+
+  footer .col2 .row2 {
+    display: flex;
+    gap: 15px;
+    position: relative;
+  }
+}
