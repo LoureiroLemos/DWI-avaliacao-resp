@@ -57,6 +57,7 @@ h2 {
 
 main .col2 {
   width: 50%;
+  display: flex;
 }
 
 main .col2 .image {
@@ -189,46 +190,54 @@ footer {
   background-repeat: no-repeat;
   padding: var(--espacamento);
   display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
-footer .col1 {
+footer .row-logo {
+  padding-top: 50px;
   display: flex;
-  flex-direction: column;
-  width: 50%;
+}
+
+footer .row-logo figure img {
+  width: 25%;
+}
+
+footer .row {
+  display: flex;
+  color: white;
+  width: 100%;
+  padding-top: 100px;
   justify-content: space-between;
-  padding: 50px 35px 35px 35px;
 }
 
-footer .col1 p {
-  color: rgb(206, 206, 206);
-  font-size: 0.87rem;
-  line-height: 1.5;
+footer #row-contacts p {
+  color: white;
+  font-size: 0.8rem;
 }
 
-footer .col2 {
+footer .row .col {
   display: flex;
-  flex-direction: column;
   width: 50%;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-  position: relative;
+  gap: 10px;
+  padding-right: 80px;
 }
 
-footer .col2 .subrow {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  height: 7vh;
-  width: 30vw;
-}
-
-footer .col2 .subrow p {
+footer .row .col p {
   color: white;
 }
 
-footer .col2 .row2 {
+footer .row .col .subcol {
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px;
+}
+
+footer .row .logo-container {
+  display: flex;
+  gap: 10px;
+  padding-right: 180px;
 }
